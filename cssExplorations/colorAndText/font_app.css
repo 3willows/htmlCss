@@ -1,0 +1,29 @@
+h1 {
+  text-align: centre;
+  width: 50%;
+  font-weight: normal;
+  text-decoration: blue underline;
+  text-decoration-style: wavy;
+  font-size: 30px;
+  font-family: 'Segoe UI', 'Futura', Arial, sans-serif;
+  font-family: fantasy;
+  text-transform: uppercase;
+}
+
+p {
+  /* font-weight: ; */
+  line-height: 2;
+}
+
+h2 {
+  letter-spacing: 5px;
+  line-height: 0.75;
+}
+
+a {
+  text-decoration: none;
+}
+/* 
+body {
+  font-size: ;
+} */
