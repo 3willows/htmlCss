@@ -8,36 +8,31 @@
 </head>
 
 <body>
-  <h1>Forms Demo: Reddit </h1>
-  <form action="https://www.reddit.com/search/">
-    <div>
-      <label for="redditSearch">Enter search term for Reddit</label>
-      <input type="text" placeholder="reddit search" id="redditSearch" name="q"><br><br>
-      <button>Reddit Search</button><br><br>
-    </div>
-  </form>
 
-  <h1>Forms Demo: DuckDuckGo</h1>
-  <form action="https://duckduckgo.com/">
-    <div>
-      <label for="duckSearch">Enter search term for DuckDuckGo</label>
-      <input type="text" placeholder="duck duck search" id="duckSearch" name="q"><br><br>
-      <button>DuckDuck Search</button><br><br>
-    </div>
-  </form>
+  <h1>Select Demo</h1>
 
-  <h1>Forms Demo: YouTube</h1>
-  <form action="https://www.youtube.com/results">
-    <div>
-      <label for="youtube">Enter search term for YouTube</label>
-      <input type="text" placeholder="youtube search" id="youtube" name="search_query"><br><br>
-      <button>YouTube Search</button><br><br>
-    </div>
-  </form>
+  <form action="/mealtype">
+    <label for="menubar">Select meal type</label>
+    <select name="mealtype" id="menubar">
+      <option value="" selected>Please choose an option</option>
+      <option value="steak">Steak</option>
+      <option value="fish">Fish</option>
+      <option value="veg">Veg</option>
+      <option value="kosher">Kosher</option>
+    </select>
+    <br>
+    <label for="menubar">How well done</label>
+    <input type="range" name="wellness" min="1" max="10"> <br>
+    <label for="checkbox">Plus one?</label>
+    <input name="plusOne" type="checkbox" id="checkbox" checked> <br>
 
+    <label for="specialRequest">Special Requests?</label> <br>
+    <textarea name="specialRequest" id="specialRequest" cols="20" rows="5"></textarea> <br>
+
+    <button>submit</button><br><br>
+
+  </form>
   <h1>Forms Internal File Demo</h1>
-
-  <hr>
 
   <form action="/tacos">
 
@@ -82,9 +77,9 @@
     <label for="checkbox">Checkbox</label><br><br>
 
     <!-- Radio Buttons -->
-    <input type="radio" id="radio1" name="radio">
+    <input type="radio" id="radio1" name="radio" value="1">
     <label for="radio1">Option 1</label><br>
-    <input type="radio" id="radio2" name="radio">
+    <input type="radio" id="radio2" name="radio" alue="2">
     <label for="radio2">Option 2</label><br><br>
 
     <!-- File Input -->
@@ -99,6 +94,35 @@
     <!-- Hidden Input -->
     <input type="hidden" value="hidden value"><br><br>
 
+  </form>
+
+  <hr>
+
+  <h1>Forms Demo: Reddit </h1>
+  <form action="https://www.reddit.com/search/">
+    <div>
+      <label for="redditSearch">Enter search term for Reddit</label>
+      <input type="text" placeholder="reddit search" id="redditSearch" name="q"><br><br>
+      <button>Reddit Search</button><br><br>
+    </div>
+  </form>
+
+  <h1>Forms Demo: DuckDuckGo</h1>
+  <form action="https://duckduckgo.com/">
+    <div>
+      <label for="duckSearch">Enter search term for DuckDuckGo</label>
+      <input type="text" placeholder="duck duck search" id="duckSearch" name="q"><br><br>
+      <button>DuckDuck Search</button><br><br>
+    </div>
+  </form>
+
+  <h1>Forms Demo: YouTube</h1>
+  <form action="https://www.youtube.com/results">
+    <div>
+      <label for="youtube">Enter search term for YouTube</label>
+      <input type="text" placeholder="youtube search" id="youtube" name="search_query"><br><br>
+      <button>YouTube Search</button><br><br>
+    </div>
   </form>
 
 
