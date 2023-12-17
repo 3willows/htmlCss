@@ -9,36 +9,6 @@
 
 <body>
 
-  <h1>Form action demo</h1>
-  <h2>Search Reddit</h2>
-  <form action="https://www.reddit.com/search/">
-    <div>
-      <label for="redditSearch">Enter search term for Reddit</label>
-      <input type="text" placeholder="reddit search" id="redditSearch" name="q"><br><br>
-      <button>Reddit Search</button><br><br>
-    </div>
-  </form>
-
-  <h2>Search DuckDuckGo</h2>
-  <form action="https://duckduckgo.com/">
-    <div>
-      <label for="duckSearch">Enter search term for DuckDuckGo</label>
-      <input type="text" placeholder="duck duck search" id="duckSearch" name="q"><br><br>
-      <button>DuckDuck Search</button><br><br>
-    </div>
-  </form>
-
-  <h2>Search YouTube</h2>
-  <form action="https://www.youtube.com/results">
-    <div>
-      <label for="youtube">Enter search term for YouTube</label>
-      <input type="text" placeholder="youtube search" id="youtube" name="search_query"><br><br>
-      <button>YouTube Search</button><br><br>
-    </div>
-  </form>
-
-  <hr>
-
   <h1>Select Demo</h1>
 
   <form action="/mealtype">
@@ -56,77 +26,116 @@
     <label for="checkbox">Plus one?</label>
     <input name="plusOne" type="checkbox" id="checkbox" checked> <br>
 
-    <label for="specialRequest">Special Requests?</label> <br>
-    <textarea name="specialRequest" id="specialRequest" cols="20" rows="5"></textarea> <br>
+    <label for="specialRequest"><b>Mandatory</b> Special Requests</label> <br>
+    <textarea  name="specialRequest" id="specialRequest" cols="20" rows="5" minlength="20" maxlength="30"
+      placeholder="You have to write something here!"></textarea>
+    <br>
+    <form action="/mealtype">
+      Please enter a url
+      <input name="url" type="url" required>
+      Please enter an email
+      <input name="email" type="email">
+      <button>submit</button><br><br>
 
-    <button>submit</button><br><br>
+    </form>
+    <hr>
+    <h1>Form action demo</h1>
+    <h2>Search Reddit</h2>
+    <form action="https://www.reddit.com/search/">
+      <div>
+        <label for="redditSearch">Enter search term for Reddit</label>
+        <input type="text" placeholder="reddit search" id="redditSearch" name="q"><br><br>
+        <button>Reddit Search</button><br><br>
+      </div>
+    </form>
 
-  </form>
-  <h1>Miscell demo</h1>
+    <h2>Search DuckDuckGo</h2>
+    <form action="https://duckduckgo.com/">
+      <div>
+        <label for="duckSearch">Enter search term for DuckDuckGo</label>
+        <input type="text" placeholder="duck duck search" id="duckSearch" name="q"><br><br>
+        <button>DuckDuck Search</button><br><br>
+      </div>
+    </form>
 
-  <form action="/tacos">
+    <h2>Search YouTube</h2>
+    <form action="https://www.youtube.com/results">
+      <div>
+        <label for="youtube">Enter search term for YouTube</label>
+        <input type="text" placeholder="youtube search" id="youtube" name="search_query"><br><br>
+        <button>YouTube Search</button><br><br>
+      </div>
+    </form>
 
-    <!-- Submit Input -->
-    <input type="submit" value="click me">
+    <hr>
 
-    <!-- Button -->
 
-    <button>submit button</button><br><br>
 
-    <div>
-      <label for="cheese">Do you like cheese</label>
-      <input type="checkbox" name="cheese" id="cheese">
-    </div>
-    <!-- Text Input -->
-    <div>
-      <label for="username">Enter username</label>
-      <input type="text" placeholder="user name" id="username" name="username"><br><br>
-    </div>
-    <!-- Password Input -->
-    <input type="password" placeholder="Password" name='password'><br><br>
+    <h1>Miscell demo</h1>
 
-    <!-- Color Input -->
-    <label for="color">Pick a color</label>
-    <input type="color" id="color" name='color'><br><br>
+    <form action="/tacos">
 
-    <!-- Email Input -->
-    <input type="email" placeholder="Email"><br><br>
+      <!-- Submit Input -->
+      <input type="submit" value="click me">
 
-    <!-- Number Input -->
-    <input type="number" placeholder="Number"><br><br>
+      <!-- Button -->
 
-    <!-- Date Input -->
-    <input type="date"><br><br>
-    <input type="month"><br><br>
+      <button>submit button</button><br><br>
 
-    <!-- Time Input -->
-    <input type="time"><br><br>
+      <div>
+        <label for="cheese">Do you like cheese</label>
+        <input type="checkbox" name="cheese" id="cheese">
+      </div>
+      <!-- Text Input -->
+      <div>
+        <label for="username">Enter username</label>
+        <input type="text" placeholder="user name" id="username" name="username"><br><br>
+      </div>
+      <!-- Password Input -->
+      <input type="password" placeholder="Password" name='password'><br><br>
 
-    <!-- Checkbox -->
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox">Checkbox</label><br><br>
+      <!-- Color Input -->
+      <label for="color">Pick a color</label>
+      <input type="color" id="color" name='color'><br><br>
 
-    <!-- Radio Buttons -->
-    <input type="radio" id="radio1" name="radio" value="1">
-    <label for="radio1">Option 1</label><br>
-    <input type="radio" id="radio2" name="radio" alue="2">
-    <label for="radio2">Option 2</label><br><br>
+      <!-- Email Input -->
+      <input type="email" placeholder="Email"><br><br>
 
-    <!-- File Input -->
-    <input type="file"><br><br>
+      <!-- Number Input -->
+      <input type="number" placeholder="Number"><br><br>
 
-    <!-- Range Input -->
-    <input type="range" min="0" max="100" value="50"><br><br>
+      <!-- Date Input -->
+      <input type="date"><br><br>
+      <input type="month"><br><br>
 
-    <!-- Search Input -->
-    <input type="search" placeholder="Search"><br><br>
+      <!-- Time Input -->
+      <input type="time"><br><br>
 
-    <!-- Hidden Input -->
-    <input type="hidden" value="hidden value"><br><br>
+      <!-- Checkbox -->
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">Checkbox</label><br><br>
 
-  </form>
+      <!-- Radio Buttons -->
+      <input type="radio" id="radio1" name="radio" value="1">
+      <label for="radio1">Option 1</label><br>
+      <input type="radio" id="radio2" name="radio" alue="2">
+      <label for="radio2">Option 2</label><br><br>
 
-  <hr>
+      <!-- File Input -->
+      <input type="file"><br><br>
+
+      <!-- Range Input -->
+      <input type="range" min="0" max="100" value="50"><br><br>
+
+      <!-- Search Input -->
+      <input type="search" placeholder="Search"><br><br>
+
+      <!-- Hidden Input -->
+      <input type="hidden" value="hidden value"><br><br>
+
+    </form>
+
+    <hr>
 
 
 
