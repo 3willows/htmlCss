@@ -1,0 +1,60 @@
+button {
+    font-size: 30px;
+}
+
+h1,
+h2 {
+    color: peru;
+    /* background-color: darkblue; */
+}
+
+#login {
+    color: greenyellow;
+    background-color: #fca311;
+}
+
+span {
+    color: #023047;
+}
+
+.tag {
+    color: red;
+}
+
+a {
+    color:aqua;
+}
+
+.firstTwo a {
+    color: #fc11c993;
+
+}
+
+footer a {
+    color: white
+}
+
+h2 + button {
+    background-color: magenta;
+}
+
+footer > a {
+    color:greenyellow;
+}
+
+input[type="password"]{
+    color: red;
+}
+
+.firstTwo button:hover {
+    color: darkgray;
+}
+
+button:active{
+    /* this is activated when you click on it */
+    background-color: green;
+}
+
+*:hover {
+    color: red;
+}
