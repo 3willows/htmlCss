@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms demo</title>
+</head>
+
+<body>
+  <h1>Forms Demo: Reddit </h1>
+  <form action="https://www.reddit.com/search/">
+    <div>
+      <label for="redditSearch">Enter search term for Reddit</label>
+      <input type="text" placeholder="reddit search" id="redditSearch" name="q"><br><br>
+      <button>Reddit Search</button><br><br>
+    </div>
+  </form>
+
+  <h1>Forms Demo: DuckDuckGo</h1>
+  <form action="https://duckduckgo.com/">
+    <div>
+      <label for="duckSearch">Enter search term for DuckDuckGo</label>
+      <input type="text" placeholder="duck duck search" id="duckSearch" name="q"><br><br>
+      <button>DuckDuck Search</button><br><br>
+    </div>
+  </form>
+
+  <h1>Forms Demo: YouTube</h1>
+  <form action="https://www.youtube.com/results">
+    <div>
+      <label for="youtube">Enter search term for YouTube</label>
+      <input type="text" placeholder="youtube search" id="youtube" name="search_query"><br><br>
+      <button>YouTube Search</button><br><br>
+    </div>
+  </form>
+
+  <h1>Forms Internal File Demo</h1>
+
+  <hr>
+
+  <form action="/tacos">
+
+    <!-- Submit Input -->
+    <input type="submit" value="click me">
+
+    <!-- Button -->
+
+    <button>submit button</button><br><br>
+
+    <div>
+      <label for="cheese">Do you like cheese</label>
+      <input type="checkbox" name="cheese" id="cheese">
+    </div>
+    <!-- Text Input -->
+    <div>
+      <label for="username">Enter username</label>
+      <input type="text" placeholder="user name" id="username" name="username"><br><br>
+    </div>
+    <!-- Password Input -->
+    <input type="password" placeholder="Password" name='password'><br><br>
+
+    <!-- Color Input -->
+    <label for="color">Pick a color</label>
+    <input type="color" id="color" name='color'><br><br>
+
+    <!-- Email Input -->
+    <input type="email" placeholder="Email"><br><br>
+
+    <!-- Number Input -->
+    <input type="number" placeholder="Number"><br><br>
+
+    <!-- Date Input -->
+    <input type="date"><br><br>
+    <input type="month"><br><br>
+
+    <!-- Time Input -->
+    <input type="time"><br><br>
+
+    <!-- Checkbox -->
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Checkbox</label><br><br>
+
+    <!-- Radio Buttons -->
+    <input type="radio" id="radio1" name="radio">
+    <label for="radio1">Option 1</label><br>
+    <input type="radio" id="radio2" name="radio">
+    <label for="radio2">Option 2</label><br><br>
+
+    <!-- File Input -->
+    <input type="file"><br><br>
+
+    <!-- Range Input -->
+    <input type="range" min="0" max="100" value="50"><br><br>
+
+    <!-- Search Input -->
+    <input type="search" placeholder="Search"><br><br>
+
+    <!-- Hidden Input -->
+    <input type="hidden" value="hidden value"><br><br>
+
+  </form>
+
+
+
+</body>
+
+</html>
