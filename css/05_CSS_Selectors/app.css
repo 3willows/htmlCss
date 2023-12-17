@@ -58,3 +58,15 @@ button:active{
 *:hover {
     color: red;
 }
+
+h1::first-letter{
+    color: violet
+}
+
+h2::first-line{
+    color: violet
+}
+
+p::selection{
+    color: white;
+}
